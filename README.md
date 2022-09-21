@@ -81,10 +81,13 @@
 Координаты дочернего перестают быть зависимыми от координат родительского объекта
 
 3)Три примера работы компонента RigidBody:
-ExplosionForce
+
+AddExplosionForce
 ![ExpForce](Screenshots/ExpForce.gif)
-...
-![image](Screenshots/Screen_9.png)
+
+AddTorque
+![Torque](Screenshots/Torque.gif)
+
 ...
 ![image](Screenshots/Screen_10.png)
 ## Задание 3
