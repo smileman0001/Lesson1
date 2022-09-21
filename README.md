@@ -88,8 +88,8 @@ AddExplosionForce
 AddTorque
 ![Torque](Screenshots/Torque.gif)
 
-...
-![image](Screenshots/Screen_10.png)
+AddForce
+![Force](Screenshots/Force.gif)
 ## Задание 3
 ### Какова роль параметра Lr? Ответьте на вопрос, приведите пример выполнения кода, который подтверждает ваш ответ. В качестве эксперимента можете изменить значение параметра.
 
