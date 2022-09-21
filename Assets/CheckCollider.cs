@@ -22,7 +22,7 @@ public class CheckCollider : MonoBehaviour
     }
 
     private void OnTriggerExit(Collider other) {
-        Debug.Log("Столкновение с " + other.gameObject.name + "завершено");
+        Debug.Log("Столкновение с " + other.gameObject.name + " завершено");
         other.GetComponent<Renderer>().material.SetColor("_Color", Color.red);
     }
 }
