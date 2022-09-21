@@ -51,19 +51,19 @@
 6) Установить компонент Sphere Collider для объекта Sphere;
 7) Настроить Sphere Collider в роли триггера;
 8) Объект куб перекрасить в красный цвет;
-![image](Screenshots/Screen #1.png)
+![image](Screenshots/Screen_1.png)
 
 9) Добавить кубу симуляцию физики, при это куб не должен проваливаться
 под Plane;
-![image](Screenshots/Screen #2.png)
+![image](Screenshots/Screen_2.png)
 
 10) Написать скрипт, который будет выводить в консоль сообщение о том,
 что объект Sphere столкнулся с объектом Cube;
 11) При столкновении Cube должен менять свой цвет на зелёный, а при
 завершении столкновения обратно на красный.
-![image](Screenshots/Screen #3.png)
-![image](Screenshots/Screen #4.png)
-![image](Screenshots/Screen #5.png)
+![image](Screenshots/Screen_3.png)
+![image](Screenshots/Screen_4.png)
+![image](Screenshots/Screen_5.png)
 
 
 ## Задание 2
