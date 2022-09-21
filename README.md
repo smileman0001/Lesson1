@@ -9,7 +9,7 @@
 | ------ | ------ | ------ |
 | Задание 1 | * |  |
 | Задание 2 | * |  |
-| Задание 3 | # |  |
+| Задание 3 | * |  |
 
 знак "*" - задание выполнено; знак "#" - задание не выполнено;
 
@@ -113,13 +113,3 @@ AddForce
 
 ## Выводы
 - Создал проект unity, в котором изучил взаимодейтсвие с объектами, работу rigidBody, элемент UI inputText и примитивные объекты unity
-
-| Plugin | README |
-| ------ | ------ |
-| Dropbox | [plugins/dropbox/README.md][PlDb] |
-| GitHub | [plugins/github/README.md][PlGh] |
-| Google Drive | [plugins/googledrive/README.md][PlGd] |
-| OneDrive | [plugins/onedrive/README.md][PlOd] |
-| Medium | [plugins/medium/README.md][PlMe] |
-| Google Analytics | [plugins/googleanalytics/README.md][PlGa] |
-
