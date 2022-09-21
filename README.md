@@ -7,9 +7,9 @@
 
 | Задание | Выполнение | Баллы |
 | ------ | ------ | ------ |
-| Задание 1 | * | 60 |
-| Задание 2 | # | 20 |
-| Задание 3 | # | 20 |
+| Задание 1 | * |  |
+| Задание 2 | # |  |
+| Задание 3 | # |  |
 
 знак "*" - задание выполнено; знак "#" - задание не выполнено;
 
@@ -51,41 +51,45 @@
 6) Установить компонент Sphere Collider для объекта Sphere;
 7) Настроить Sphere Collider в роли триггера;
 8) Объект куб перекрасить в красный цвет;
+![image](Screenshots/Screen_1.png)
+
 9) Добавить кубу симуляцию физики, при это куб не должен проваливаться
 под Plane;
+![image](Screenshots/Screen_2.png)
+
 10) Написать скрипт, который будет выводить в консоль сообщение о том,
 что объект Sphere столкнулся с объектом Cube;
 11) При столкновении Cube должен менять свой цвет на зелёный, а при
 завершении столкновения обратно на красный.
+![image](Screenshots/Screen_3.png)
+![image](Screenshots/Screen_4.png)
+![image](Screenshots/Screen_5.png)
+
 
 ## Задание 2
-### Должна ли величина loss стремиться к нулю при изменении исходных данных? Ответьте на вопрос, приведите пример выполнения кода, который подтверждает ваш ответ.
+### Продемонстрируйте на сцене в Unity следующее:
+#### - Что произойдёт с координатами объекта, если он перестанет быть дочерним?
+#### - Создайте три различных примера работы компонента RigidBody
 
-- Перечисленные в этом туториале действия могут быть выполнены запуском на исполнение скрипт-файла, доступного [в репозитории](https://github.com/Den1sovDm1triy/hfss-scripting/blob/main/ScreatingSphereInAEDT.py).
-- Для запуска скрипт-файла откройте Ansys Electronics Desktop. Перейдите во вкладку [Automation] - [Run Script] - [Выберите файл с именем ScreatingSphereInAEDT.py из репозитория].
+#### Ход работы (задание 2).
+1)Объект является дочерним
+![image](Screenshots/Screen_6.png)
 
-```py
+2)Объект не является дочерним
+![image](Screenshots/Screen_7.png)
 
-import ScriptEnv
-ScriptEnv.Initialize("Ansoft.ElectronicsDesktop")
-oDesktop.RestoreWindow()
-oProject = oDesktop.NewProject()
-oProject.Rename("C:/Users/denisov.dv/Documents/Ansoft/SphereDIffraction.aedt", True)
-oProject.InsertDesign("HFSS", "HFSSDesign1", "HFSS Terminal Network", "")
-oDesign = oProject.SetActiveDesign("HFSSDesign1")
-oEditor = oDesign.SetActiveEditor("3D Modeler")
-oEditor.CreateSphere(
-	[
-		"NAME:SphereParameters",
-		"XCenter:="		, "0mm",
-		"YCenter:="		, "0mm",
-		"ZCenter:="		, "0mm",
-		"Radius:="		, "1.0770329614269mm"
-	], 
-)
+Координаты дочернего перестают быть зависимыми от координат родительского объекта
 
-```
+3)Три примера работы компонента RigidBody:
 
+AddExplosionForce
+![ExpForce](Screenshots/ExpForce.gif)
+
+AddTorque
+![Torque](Screenshots/Torque.gif)
+
+AddForce
+![Force](Screenshots/Force.gif)
 ## Задание 3
 ### Какова роль параметра Lr? Ответьте на вопрос, приведите пример выполнения кода, который подтверждает ваш ответ. В качестве эксперимента можете изменить значение параметра.
 
