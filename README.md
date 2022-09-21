@@ -82,7 +82,7 @@
 
 3)Три примера работы компонента RigidBody:
 ExplosionForce
-![image](Screenshots/Screen_8.png)
+![image](Screenshots/ExpForce.mp4)
 ...
 ![image](Screenshots/Screen_9.png)
 ...
