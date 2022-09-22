@@ -9,7 +9,7 @@
 | ------ | ------ | ------ |
 | Задание 1 | * |  |
 | Задание 2 | * |  |
-| Задание 3 | # |  |
+| Задание 3 | * |  |
 
 знак "*" - задание выполнено; знак "#" - задание не выполнено;
 
@@ -65,6 +65,10 @@
 ![image](Screenshots/Screen_4.png)
 ![image](Screenshots/Screen_5.png)
 
+Код
+![image](Screenshots/Screen_8.png)
+
+
 
 ## Задание 2
 ### Продемонстрируйте на сцене в Unity следующее:
@@ -82,6 +86,10 @@
 
 3)Три примера работы компонента RigidBody:
 
+Код:
+![image](Screenshots/Screen_9.png)
+
+
 AddExplosionForce
 ![ExpForce](Screenshots/ExpForce.gif)
 
@@ -90,47 +98,18 @@ AddTorque
 
 AddForce
 ![Force](Screenshots/Force.gif)
+
+
 ## Задание 3
-### Какова роль параметра Lr? Ответьте на вопрос, приведите пример выполнения кода, который подтверждает ваш ответ. В качестве эксперимента можете изменить значение параметра.
+### Реализуйте на сцене генерацию n кубиков. Число n вводится пользователем после старта сцены.
+#### Ход работы (задание 3).
+1)Создан TMP_InputFIeld
+2)Код
+![image](Screenshots/Screen_10.png)
+3)Выполнение
+![Cubes](Screenshots/Cubes.gif)
 
-- Перечисленные в этом туториале действия могут быть выполнены запуском на исполнение скрипт-файла, доступного [в репозитории](https://github.com/Den1sovDm1triy/hfss-scripting/blob/main/ScreatingSphereInAEDT.py).
-- Для запуска скрипт-файла откройте Ansys Electronics Desktop. Перейдите во вкладку [Automation] - [Run Script] - [Выберите файл с именем ScreatingSphereInAEDT.py из репозитория].
 
-```py
-
-import ScriptEnv
-ScriptEnv.Initialize("Ansoft.ElectronicsDesktop")
-oDesktop.RestoreWindow()
-oProject = oDesktop.NewProject()
-oProject.Rename("C:/Users/denisov.dv/Documents/Ansoft/SphereDIffraction.aedt", True)
-oProject.InsertDesign("HFSS", "HFSSDesign1", "HFSS Terminal Network", "")
-oDesign = oProject.SetActiveDesign("HFSSDesign1")
-oEditor = oDesign.SetActiveEditor("3D Modeler")
-oEditor.CreateSphere(
-	[
-		"NAME:SphereParameters",
-		"XCenter:="		, "0mm",
-		"YCenter:="		, "0mm",
-		"ZCenter:="		, "0mm",
-		"Radius:="		, "1.0770329614269mm"
-	], 
-)
-
-```
 
 ## Выводы
-
-Абзац умных слов о том, что было сделано и что было узнано.
-
-| Plugin | README |
-| ------ | ------ |
-| Dropbox | [plugins/dropbox/README.md][PlDb] |
-| GitHub | [plugins/github/README.md][PlGh] |
-| Google Drive | [plugins/googledrive/README.md][PlGd] |
-| OneDrive | [plugins/onedrive/README.md][PlOd] |
-| Medium | [plugins/medium/README.md][PlMe] |
-| Google Analytics | [plugins/googleanalytics/README.md][PlGa] |
-
-## Powered by
-
-**BigDigital Team: Denisov | Fadeev | Panov**
+- Создал проект unity, в котором изучил взаимодейтсвие с объектами, работу rigidBody, элемент UI inputText и примитивные объекты unity
